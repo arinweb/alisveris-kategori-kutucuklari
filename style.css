@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+    * {
+      font-family: Quicksand;
+      margin: 0px;
+      padding: 0px;
+    }
+    .img-urun-container {
+      margin: 5px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .img-urun-container div {
+      flex-grow: 1;
+      height: 200px;
+      margin: 5px;
+      padding: 0px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .img-urun-container img {
+      border-radius: 5px;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      margin: 0px;
+      height: 200px;
+      filter: brightness(60%);
+      transition: 0.5s;
+    }
+    .img-urun-container div:hover img {
+      transition: 0.5s;
+      filter: brightness(100%);
+      transform: scale(1.5);
+    }
+    .img-urun-container h2,
+    .img-urun-container p,
+    .img-urun-container a {
+      z-index: 10;
+    }
+    .img-urun-container h2 {
+      position: absolute;
+      margin-top: 65px;
+      margin-left: 20px;
+    }
+    .img-urun-container p {
+      position: absolute;
+      margin-top: 120px;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+    .img-urun-container a {
+      font-size: 13px;
+      position: absolute;
+      margin-top: 150px;
+      margin-left: 20px;
+      text-decoration: none;
+      padding: 7px;
+      border-radius: 5px;
+      color: white;
+      border: 2px solid white;
+    }
